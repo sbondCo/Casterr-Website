@@ -1,7 +1,9 @@
 <!DOCTYPE html>
+<link href="scss/main.css" rel="stylesheet" />
 <html>
     {{- partial "head.html" . -}}
     <body>
+        {{- partial "nav.html" . -}}
         {{- partial "header.html" . -}}
         <div id="content">
         {{- block "main" . }}{{- end }}
