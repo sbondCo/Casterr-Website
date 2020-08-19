@@ -6,9 +6,24 @@ nav {
     position: absolute;
     border-bottom: solid 0.1em #e16428;
     justify-content: left;
+    align-items: center;
 
     img {
         width: 60px;
         height: 60px;
+    }
+
+    li {
+        background-color: #363333;
+        padding: 10px 15px;
+        //border: solid #ca3e47;
+        border-width: 1px 0px;
+        box-sizing: border-box;        
+    }
+
+    a {
+        //font-family: "Roboto Condensed";
+        color: #ececec;         //#ececec
+        text-decoration: none;
     }
 }

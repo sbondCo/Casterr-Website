@@ -10,6 +10,9 @@ nav {
   -webkit-box-pack: left;
       -ms-flex-pack: left;
           justify-content: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 nav img {
@@ -17,11 +20,22 @@ nav img {
   height: 60px;
 }
 
+nav li {
+  background-color: #363333;
+  padding: 10px 15px;
+  border-width: 1px 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+nav a {
+  color: #ececec;
+  text-decoration: none;
+}
+
 * {
   padding: 0;
   margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
 
 body {
