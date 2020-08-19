@@ -1,8 +1,14 @@
 nav {
     width: 100vw;
-    height: 5vh;
+    height: 64px;
     background-color: #272121;
     display: flex;
     position: absolute;
     border-bottom: solid 0.1em #e16428;
+    justify-content: left;
+
+    img {
+        width: 60px;
+        height: 60px;
+    }
 }

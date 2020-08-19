@@ -1,12 +1,20 @@
 nav {
   width: 100vw;
-  height: 5vh;
+  height: 64px;
   background-color: #272121;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   position: absolute;
   border-bottom: solid 0.1em #e16428;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
+nav img {
+  width: 60px;
+  height: 60px;
 }
 
 * {
