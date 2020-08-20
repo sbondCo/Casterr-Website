@@ -13,17 +13,63 @@ nav {
         height: 60px;
     }
 
+    ul {
+        width: 100%;
+        height: 100%;
+        display: flex;
+    }
+
     li {
-        background-color: #363333;
-        padding: 10px 15px;
-        //border: solid #ca3e47;
-        border-width: 1px 0px;
-        box-sizing: border-box;        
+        list-style-type: none;
+        width: 10%;
+        height: 100%;
+        padding: 0px;
+        display: flex;    
     }
 
     a {
-        //font-family: "Roboto Condensed";
-        color: #ececec;         //#ececec
         text-decoration: none;
+    }
+
+    span {
+        position: relative;
+        cursor: pointer;
+        color: #ca3e47;
+        font-size: 1.5em;
+
+        &:before, &:after {
+            content: '';
+            position: absolute;
+            width: 0%;
+            height: 4px;
+            bottom: -2px;
+            margin-top: -0.5px;
+            background: #fff;
+        }
+
+        &:before {
+            left: -2.5px;
+        }
+
+        &:after {
+            right: 2.5px;
+            background: #fff;
+            transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+        }
+
+        &:hover {
+            &:before {
+                background: #fff;
+                width: 100%;
+                transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+            }
+
+            &:after {
+                background: transparent;
+                width: 100%;
+                transition: 0s;
+            }
+    }
+
     }
 }
