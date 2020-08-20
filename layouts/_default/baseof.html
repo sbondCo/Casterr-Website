@@ -1,13 +1,18 @@
 <!DOCTYPE html>
-<link href="scss/main.css" rel="stylesheet" />
 <html>
-    {{- partial "head.html" . -}}
+    <head>
+      {{- partial "head.html" . -}}
+    </head>
     <body>
         {{- partial "nav.html" . -}}
         {{- partial "header.html" . -}}
+
         <div id="content">
-        {{- block "main" . }}{{- end }}
+          {{- block "main" . }}
+          
+          {{- end }}
         </div>
+
         {{- partial "footer.html" . -}}
     </body>
 </html>
