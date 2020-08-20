@@ -1,6 +1,6 @@
 nav {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
   position: absolute;
   width: 100vw;
@@ -17,9 +17,10 @@ nav {
 
   ul {
     height: 100%;
+    position: absolute;
     display: flex;
-    justify-content: center;
     align-items: center;
+    left: 60px;
 
     li {
       display: flex;
