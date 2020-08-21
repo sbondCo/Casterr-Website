@@ -13,6 +13,7 @@ nav {
     left: 0;
     width: 60px;
     height: 60px;
+    user-select: none;
   }
 
   ul {
@@ -34,6 +35,7 @@ nav {
         cursor: pointer;
         color: #ca3e47;
         font-size: 1.5em;
+        outline: none;
     
         &:before,
         &:after {

@@ -41,16 +41,13 @@ body {
             background-color: #ca3e47;
             border: none;
             width: 190px;
-            height: 50px;
+            height: 70px;
             font-size: 1.75em;
-            border-radius: 5px;
-            box-shadow: 0px 3px 5px black;
             cursor: pointer;
-
-            &:hover {
-                color: #363333;
-                background-color: #e16428;
-            }
+            outline: none;
+            border-radius: 0.4rem;
+            border: 0.2rem solid black;
+            box-shadow: 0 2px 0 0 black;
         }
     }
 }
