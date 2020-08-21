@@ -6,13 +6,7 @@
     <body>
         {{- partial "nav.html" . -}}
         {{- partial "header.html" . -}}
-
-        <div id="content">
-          {{- block "main" . }}
-          
-          {{- end }}
-        </div>
-
+        {{- partial "content.html" . -}}
         {{- partial "footer.html" . -}}
     </body>
 </html>
