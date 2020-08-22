@@ -47,7 +47,13 @@ body {
             outline: none;
             border-radius: 0.4rem;
             border: 0.2rem solid black;
-            box-shadow: 0 2px 0 0 black;
+            box-shadow: 0 3px 0 0 black;
+            position: relative;
+
+            &:active {
+                top: 3px;
+                box-shadow: none;
+            }
         }
     }
 }
