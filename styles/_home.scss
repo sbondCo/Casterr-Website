@@ -30,7 +30,7 @@ body {
         }
     }
 
-    .btnContainer{
+    .btnContainer {
         display: flex;
         position: relative;
         justify-content: center;
@@ -39,7 +39,6 @@ body {
         .btn {
             color: black;
             background-color: #ca3e47;
-            border: none;
             width: 190px;
             height: 70px;
             font-size: 1.75em;
@@ -48,11 +47,28 @@ body {
             border-radius: 0.4rem;
             border: 0.2rem solid black;
             box-shadow: 0 3px 0 0 black;
-            position: relative;
-
+            position: absolute;
+            
             &:active {
                 top: 3px;
                 box-shadow: none;
+            }
+
+            &:hover + .infoBox {
+                display: flex;
+            }
+        }
+
+        .infoBox {
+            display: none;
+            position: relative;
+            justify-content: center;
+            top: 100px;
+    
+            p {
+                display: inherit;
+                width: 190px;
+                height: 100px;
             }
         }
     }
