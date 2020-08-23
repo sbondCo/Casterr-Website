@@ -63,13 +63,9 @@ body {
             display: none;
             position: relative;
             justify-content: center;
-            top: 100px;
-    
-            p {
-                display: inherit;
-                width: 190px;
-                height: 100px;
-            }
+            bottom: 24px;
+            color: lightgray;
+            border-bottom: 2px solid gray;
         }
     }
 }
