@@ -34,7 +34,7 @@ body {
         display: flex;
         position: relative;
         justify-content: center;
-        top: 400px;
+        top: 410px;
 
         p {
             color: gray;
@@ -47,13 +47,14 @@ body {
     .btnContainer {
         display: flex;
         position: relative;
-        justify-content: center;
         top: 480px;
+        justify-content: center;
 
         .btn {
+            display: inline-block;
             color: black;
             background-color: #ca3e47;
-            width: 190px;
+            width: 280px;
             height: 70px;
             font-size: 1.75em;
             cursor: pointer;
@@ -62,7 +63,7 @@ body {
             border: 0.2rem solid black;
             box-shadow: 0 3px 0 0 black;
             position: absolute;
-            
+
             &:active {
                 top: 3px;
                 box-shadow: none;
@@ -70,6 +71,27 @@ body {
 
             &:hover + .infoBox {
                 display: flex;
+            }
+        }
+
+        .btn2 {
+            display: inline-block;
+            color: #ca3e47;
+            background-color: black;
+            width: 280px;
+            height: 70px;
+            font-size: 1.75em;
+            cursor: pointer;
+            outline: none;
+            border-radius: 0.4rem;
+            border: 0.2rem solid #ca3e47;
+            box-shadow: 0 3px 0 0 #ca3e47;
+            position: absolute;
+            left: 100%;
+
+            &:active {
+                top: 3px;
+                box-shadow: none;
             }
         }
 
