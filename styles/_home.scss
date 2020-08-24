@@ -3,16 +3,30 @@ body {
     width: 100vw;
     height: 100vh;
 
+    .titleBox {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        top: 380px;
+
+        h1 {
+            color: white;
+            font-size: 5em;
+            border-bottom: 3px solid #e16428;
+        }
+    }
+
     .header{
         display: flex;
         position: relative;
         justify-content: center;
-        top: 100px;
 
-        h1 {
-            color: white;
-            font-size: 3.5em;
-            border-bottom: 3px solid #e16428;
+        img {
+            position: absolute;
+            left: 0;
+            width: 60px;
+            height: 60px;
+            user-select: none;
         }
     }
 
@@ -20,12 +34,12 @@ body {
         display: flex;
         position: relative;
         justify-content: center;
-        top: 130px;
+        top: 400px;
 
         p {
             color: gray;
             background-color: #272121;
-            font-size: 1.75em;
+            font-size: 3em;
             border-top: 4px solid black;
         }
     }
@@ -34,7 +48,7 @@ body {
         display: flex;
         position: relative;
         justify-content: center;
-        top: 340px;
+        top: 480px;
 
         .btn {
             color: black;
