@@ -12,7 +12,8 @@ body {
         h1 {
             color: white;
             font-size: 5em;
-            border-bottom: 3px solid #e16428;
+            border-bottom: 3px solid #e16428; 
+            text-shadow: 4px 4px #272121;
         }
     }
 
@@ -48,7 +49,6 @@ body {
         display: flex;
         position: relative;
         top: 480px;
-        height: 100px;
         justify-content: center;
         width: 100vw;
 
@@ -78,10 +78,10 @@ body {
         }
 
         .btn2 {
+            display: flex;
             color: #ca3e47;
             background-color: black;
             width: 300px;
-            height: 70px;
             font-size: 1.75em;
             cursor: pointer;
             outline: none;
@@ -91,6 +91,8 @@ body {
             position: relative;
             text-align: center;
             left: 30px;
+            justify-content: center;
+            align-items: center;
 
             &:active {
                 top: 3px;
@@ -102,10 +104,10 @@ body {
             display: none;
             position: relative;
             justify-content: center;
-            bottom: 26px;
+            top: 100px;
+            right: 30px;
             color: lightgray;
-            border-bottom: 2px solid #b5b0ad;
-            font-size: 1.2em
+            font-size: 1.2em;
         }
     }
 }
