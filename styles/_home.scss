@@ -61,13 +61,16 @@
 
       .infoBox {
         display: none;
-        position: absolute;
+        position: relative;
         justify-content: center;
         top: 80px;
         bottom: 50px;
-        right: 30px;
         color: lightgray;
         font-size: 1.2em;
+
+        p {
+          box-shadow: 0 3px 3px 0 black;
+        }
       }
     }
 
