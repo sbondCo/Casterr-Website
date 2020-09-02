@@ -15,7 +15,7 @@
     font-size: 5em;
   }
 
-  .description {
+  #description {
     display: flex;
     justify-content: center;
     padding: 5px;
@@ -52,6 +52,10 @@
         &:active {
           top: 3px;
           box-shadow: none;
+
+          .description {
+            content: "test";
+          }
         }
 
         &:hover + .infoBox {
