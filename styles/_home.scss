@@ -17,6 +17,7 @@
 
   #description {
     display: flex;
+    flex-flow: wrap;
     justify-content: center;
     padding: 5px;
     margin-bottom: 40px;
@@ -26,7 +27,8 @@
     border-top: 4px solid black;
 
     #changingText {
-      padding: 0 10px ;
+      padding: 0 10px;
+      color: #444;
     }
   }
 
