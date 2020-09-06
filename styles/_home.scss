@@ -5,7 +5,7 @@
   flex-flow: column;
   height: 100vh;
 
-  .title {
+  #title {
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
@@ -25,11 +25,6 @@
     background-color: #272121;
     font-size: 3em;
     border-top: 4px solid black;
-
-    #changingText {
-      padding: 0 10px;
-      color: #444;
-    }
   }
 
   .buttons {
