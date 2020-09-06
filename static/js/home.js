@@ -6,7 +6,7 @@ downloadBtn.addEventListener("click", function() {
         document.getElementById("title").textContent = "Thanks!"
         document.getElementById("description").textContent = "You're the best!"
 
-        setTimeout(function(){
+        setTimeout(function() {
             document.getElementById("title").textContent = "Casterr"
             document.getElementById("description").textContent = "Share your best highlights easily"
         }, 4000);
