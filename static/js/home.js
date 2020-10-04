@@ -1,4 +1,4 @@
-var downloadBtn = document.getElementById("downloadButton");
+const downloadBtn = document.getElementById("downloadButton");
 var hasFunctionRan = false;
 
 downloadBtn.addEventListener("click", function () {
