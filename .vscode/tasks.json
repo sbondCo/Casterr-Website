@@ -13,6 +13,12 @@
         "kind": "build",
         "isDefault": true
       }
+    },
+    {
+      "label": "watch sass",
+      "command": "sass styles/main.scss static/css/main.min.css -w --style=compressed",
+      "type": "shell",
+      "problemMatcher": "$msCompile",
     }
   ]
 }
