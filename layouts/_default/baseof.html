@@ -5,6 +5,10 @@
   </head>
   <body>
     {{- partial "header.html" . -}}
-    {{- partial "content.html" . -}}
-  </body>
+
+  <div class="contentContainer">
+    {{- partial "main/download.html" . -}}
+    {{- partial "main/features.html" . -}}
+  </div>
+</body>
 </html>
