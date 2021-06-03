@@ -4,6 +4,7 @@ title: "Casterr"
 enableRobotsTXT: false
 
 Params:
+  github: "https://github.com/sbondCo/Casterr"
   features:
     - name: "Recordings Browser"
       icon: "movie.svg"
