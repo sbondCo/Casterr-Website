@@ -1,0 +1,15 @@
+<section id="features">
+  {{ range .Site.Params.features }}
+    <div class="feature">
+      <div class="title">
+        {{ $icon := (print "static/img/icons/" .icon) | urlize }}
+        {{ readFile $icon | safeHTML }}
+
+        <h1>{{ .name }}</h1>
+      </div>
+      <h4>{{ .desc }}</h4>
+    </div>
+  {{ end }}
+
+  <!-- <div>If theres a feature you'd like to see, sugest it here!</div> -->
+</section>

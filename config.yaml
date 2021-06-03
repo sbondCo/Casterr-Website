@@ -2,3 +2,21 @@ baseURL: "https://casterr.sbond.co/"
 languageCode: "en-us"
 title: "Casterr"
 enableRobotsTXT: false
+
+Params:
+  features:
+    - name: "Recordings Browser"
+      icon: "movie.svg"
+      desc: "Rich list of your past recordings for your to browse.
+        Gives you useful information about the video, such as it's name,
+        length, size and FPS along with a thumbnail."
+    - name: "Video Clipper"
+      icon: "trim.svg"
+      desc: "Simple video editor that gives you fine control over sharing 
+      exactly what you want to, seamlessly clip parts of your video into a 
+      new one. Doubles as a great place for you to watch your videos."
+    - name: "Settings"
+      icon: "settings.svg"
+      desc: "Easily configure your recording and app settings. Casterr aims
+        for full customizability in an accessible way. Settings are stored in
+        JSON files, which makes backing up and restoring them easy."
