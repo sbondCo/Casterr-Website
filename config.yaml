@@ -20,3 +20,18 @@ Params:
       desc: "Easily configure your recording and app settings. Casterr aims
         for full customizability in an accessible way. Settings are stored in
         JSON files, which makes backing up and restoring them easy."
+    - name: "Open Source"
+      icon: "open-lock.svg"
+      desc: "Casterr is fully open source and free. It's source code is easily 
+        accessible to anyone and modification is encouraged! Head over to the 
+        repo to contribute yourself."
+    - name: "Cross Platform"
+      icon: "cross-platform.svg"
+      desc: "Developed for Windows and Linux machines, unfortunately we don't
+        currently support OSX though, but that can change through community
+        engagement on the matter."
+    - name: "Easy & Simple"
+      icon: "send.svg"
+      desc: "Anyone can use Casterr, it was built with usability and 
+        ease-of-access in mind. Everything that can be, is done automatically
+        out of sight, which takes all the worry away."
