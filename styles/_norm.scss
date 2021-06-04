@@ -3,12 +3,22 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: "Roboto Condensed";
+  font-family: "Roboto Condensed", Arial, Helvetica;
 }
 
 body {
   color: $white;
   background-color: #363333;
+}
+
+section {
+  height: 100vh;
+  width: 100%;
+
+  @media (max-height: 500px) {
+    height: auto;
+    padding: 70px 0;
+  }
 }
 
 a {
