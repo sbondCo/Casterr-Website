@@ -1,15 +1,25 @@
 <section id="download">
-  <h1 id="title">Casterr</h1>
+  <div class="wrapper">
+    <h1 id="title">Casterr</h1>
 
-  <p id="description">Share your best highlights easily</p>
+    <p id="description">Share your best highlights easily</p>
 
-  <div class="buttons">
-    <div class="download">
-      <button id="downloadButton">Download</button>
+    <div class="buttons">
+      <!-- <div class="download">
+        <button id="downloadButton">Download</button>
+      </div>
+
+      <button class="source">
+        <a href="{{ .Site.Params.github }}" target="_blank">Source</a>
+      </button> -->
+
+      <button class="download" id="downloadButton">
+        Download
+      </button>
+
+      <button class="source" id="sourceButton">
+        <a href="{{ .Site.Params.github }}" target="_blank">Source</a>
+      </button>
     </div>
-
-    <button class="source">
-      <a href="{{ .Site.Params.github }}" target="_blank">Source</a>
-    </button>
   </div>
 </section>

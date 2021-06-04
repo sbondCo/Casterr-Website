@@ -21,6 +21,39 @@ section {
   }
 }
 
+button {
+  width: 100%;
+  height: 70px;
+  font-size: 1.75em;
+  color: black;
+  background-color: $red;
+  outline: none;
+  border-radius: 0.4rem;
+  border: 0.2rem solid black;
+  box-shadow: 0 3px 0 0 black;
+  text-align: center;
+  cursor: pointer;
+
+  // If button text has a link on it, override default style and make it look purrty
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border: unset;
+
+    &:hover {
+      color: unset;
+    }
+  }
+
+  &:active {
+    top: 3px;
+    box-shadow: none;
+  }
+}
+
 a {
   color: $red;
   text-decoration: none;
