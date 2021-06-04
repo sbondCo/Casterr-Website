@@ -1,10 +1,18 @@
 .header {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  width: 60px;
+  height: auto;
+  user-select: none;
+  transition: width 100ms ease-in, height 100ms ease-in;
+  z-index: 1;
+
+  @media (max-width: 860px) {
+    width: 45px;
+  }
+
   img {
-    position: fixed;
-    top: 10px;
-    left: 10px;
-    width: 60px;
-    height: 60px;
-    user-select: none;
+    width: 100%;
   }
 }
