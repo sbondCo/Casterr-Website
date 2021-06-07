@@ -6,7 +6,7 @@ enableRobotsTXT: false
 Params:
   github: "https://github.com/sbondCo/Casterr"
   features:
-    - name: "Recordings Browser"
+    - name: "Recording Browser"
       icon: "movie.svg"
       desc: "Rich list of your past recordings for your to browse.
         Gives you useful information about the video, such as it's name,

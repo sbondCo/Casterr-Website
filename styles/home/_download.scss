@@ -9,6 +9,7 @@ section#download {
     align-items: center;
     flex-flow: column;
     max-width: 700px;
+    margin: 0 10px;
 
     #title,
     #description {
@@ -37,7 +38,10 @@ section#download {
       button {
         position: relative;
         width: 50%;
-        margin: 0 10px;
+
+        &:not(:last-of-type) {
+          margin-right: 10px;
+        }
       }
 
       .source {

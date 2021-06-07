@@ -26,11 +26,6 @@ section#features {
       flex-wrap: nowrap;
       justify-content: flex-start;
       overflow-x: scroll;
-
-      .feature {
-        flex: 0 0 50%;
-        width: 200px;
-      }
     }
 
     .feature {
@@ -43,6 +38,18 @@ section#features {
 
       @media (max-width: 1200px) {
         flex: 0 0 35%;
+      }
+
+      @media (max-width: 820px) {
+        flex: 0 0 40%;
+      }
+
+      @media (max-width: 720px) {
+        flex: 0 0 50%;
+      }
+
+      @media (max-width: 575px) {
+        flex: 0 0 80%;
       }
 
       .name {
