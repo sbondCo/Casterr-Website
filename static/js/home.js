@@ -1,19 +1,15 @@
 const downloadBtn = document.getElementById("downloadButton");
-const sourceBtn = document.getElementById("sourceButton");
-var hasFunctionRan = false;
+var hasSaidThanks = false;
 
 downloadBtn.addEventListener("click", function () {
-  if (hasFunctionRan == false) {
+  if (hasSaidThanks == false) {
+    let toRevertTo = document.getElementById("title").textContent;
     document.getElementById("title").textContent = "Thanks!";
 
     setTimeout(function () {
-      document.getElementById("title").textContent = "Casterr";
+      document.getElementById("title").textContent = toRevertTo;
     }, 4000);
 
-    hasFunctionRan = true;
+    hasSaidThanks = true;
   }
 });
-
-// downloadBtn.addEventListener("click", function () {
-//   window.open();
-// });
