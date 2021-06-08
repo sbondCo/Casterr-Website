@@ -1,13 +1,16 @@
 const downloadBtn = document.getElementById("downloadButton");
 let hasSaidThanks = false;
 
-let winDownloadURL = "";
-let linuxDownloadURL = "";
+let winDownloadURL = undefined;
+let linuxDownloadURL = undefined;
 
 /**
  * Get latest release from github repo and set download link vars.
  */
 function setDownloadLinks() {
+  // **Releases are pre-releases so we can't use the api
+  // to get the latest release, because that only counts full releases.
+  // When we start creating full releases, then change this to get the latest release.**
   fetch("https://api.github.com/repos/sbondCo/Casterr/releases", {
     method: "GET",
     headers: {
@@ -17,7 +20,6 @@ function setDownloadLinks() {
     .then((r) => r.json())
     .then((data) => {
       let assets = data[0].assets;
-
       let win = assets.filter((a) => a.name.toLowerCase().endsWith(".exe"))[0];
       let linux = assets.filter((a) => a.name.toLowerCase().endsWith(".appimage"))[0];
 
@@ -30,7 +32,17 @@ function setDownloadLinks() {
     });
 }
 
-downloadBtn.addEventListener("click", () => {
+function openDownloadLink(which) {
+  if (which == "win" && winDownloadURL) {
+    window.open(winDownloadURL);
+  }
+
+  if (which == "linux" && linuxDownloadURL) {
+    window.open(linuxDownloadURL);
+  }
+}
+
+downloadBtn.addEventListener("click", (e) => {
   if (downloadBtn.classList.contains("loading")) return;
 
   if (!hasSaidThanks) {
@@ -43,6 +55,14 @@ downloadBtn.addEventListener("click", () => {
 
     hasSaidThanks = true;
   }
+});
+
+document.getElementById("windowsDownloadBtn").addEventListener("click", () => {
+  openDownloadLink("win");
+});
+
+document.getElementById("linuxDownloadBtn").addEventListener("click", () => {
+  openDownloadLink("linux");
 });
 
 setDownloadLinks();
