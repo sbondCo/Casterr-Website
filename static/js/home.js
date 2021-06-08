@@ -31,6 +31,8 @@ function setDownloadLinks() {
 }
 
 downloadBtn.addEventListener("click", () => {
+  if (downloadBtn.classList.contains("loading")) return;
+
   if (!hasSaidThanks) {
     let toRevertTo = document.getElementById("title").textContent;
     document.getElementById("title").textContent = "Thanks!";
