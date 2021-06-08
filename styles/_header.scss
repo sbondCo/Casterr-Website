@@ -6,7 +6,7 @@
   height: auto;
   user-select: none;
   transition: width 100ms ease-in, height 100ms ease-in;
-  z-index: 1;
+  z-index: 100;
 
   @media (max-width: 860px) {
     width: 45px;
