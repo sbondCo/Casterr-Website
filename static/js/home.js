@@ -27,8 +27,6 @@ function setDownloadLinks() {
       linuxDownloadURL = linux.browser_download_url;
 
       downloadBtn.classList.remove("loading");
-
-      console.log(win, linux);
     });
 }
 
