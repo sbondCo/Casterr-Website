@@ -27,7 +27,7 @@ section#download {
       color: gray;
       background-color: #272121;
       font-size: 3em;
-      border-top: 4px solid black;
+      border-top: 4px solid $black;
     }
 
     .buttons {
@@ -62,7 +62,7 @@ section#download {
             left: 50%;
             top: 50%;
             transform: translate(-50%, -50%);
-            color: black;
+            color: $black;
             font-size: 1.75em;
             z-index: 1;
           }
