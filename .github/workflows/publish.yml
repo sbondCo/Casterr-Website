@@ -30,6 +30,5 @@ jobs:
         if: github.ref == 'refs/heads/master'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: pages
-          publish_dir: ./pub
-          allow_empty_commit: true
+          # publish_branch: pages
+          publish_dir: ./public
