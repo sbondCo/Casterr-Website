@@ -58,6 +58,7 @@ a {
   color: $red;
   text-decoration: none;
   border-bottom: 1px solid $white;
+  text-shadow: 1px 1px black;
   transition: all 250ms ease-in-out;
 
   &:hover {

@@ -8,16 +8,16 @@
       <div class="download loading" id="downloadButton">
         <div class="loader"><span class="spinner"></span></div>
 
-        <button id="windowsDownloadBtn">
+        <button id="windowsDownloadBtn" aria-label="Download for Windows">
           {{ readFile "static/img/icons/windows.svg" | safeHTML }}
         </button>
 
-        <button id="linuxDownloadBtn">
+        <button id="linuxDownloadBtn" aria-label="Download for Linux">
           {{ readFile "static/img/icons/linux.svg" | safeHTML }}
         </button>
       </div>
 
-      <button class="source" id="sourceButton">
+      <button class="source" id="sourceButton" aria-label="View source code">
         <a href="{{ .Site.Params.github }}" target="_blank">Source Code</a>
       </button>
     </div>
