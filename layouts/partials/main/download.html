@@ -17,9 +17,11 @@
         </button>
       </div>
 
-      <button class="source" id="sourceButton" aria-label="View source code">
-        <a href="{{ .Site.Params.github }}" target="_blank">Source Code</a>
-      </button>
+      <a class="source" href="{{ .Site.Params.github }}" target="_blank" tabindex="-1">
+        <button class="inverted" id="sourceButton" aria-label="View source code">
+          Source Code
+        </button>
+      </a>
     </div>
   </div>
 </section>

@@ -36,13 +36,18 @@ section#download {
       width: 100%;
 
       button,
-      .download {
+      .download,
+      .source {
         position: relative;
         width: 50%;
 
         &:not(:last-of-type) {
           margin-right: 10px;
         }
+      }
+
+      button {
+        width: 100%;
       }
 
       .download {
@@ -99,14 +104,6 @@ section#download {
             transition: opacity 100ms ease-in;
           }
         }
-      }
-
-      .source {
-        color: $red;
-        background-color: black;
-        height: 70px;
-        border-color: $red;
-        text-align: center;
       }
     }
   }
