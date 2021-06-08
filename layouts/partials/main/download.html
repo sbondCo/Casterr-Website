@@ -5,7 +5,9 @@
     <p id="description">Share your best highlights easily</p>
 
     <div class="buttons">
-      <div class="download" id="downloadButton">
+      <div class="download loading" id="downloadButton">
+        <div class="loader"><span class="spinner"></span></div>
+
         <button>
           {{ readFile "static/img/icons/windows.svg" | safeHTML }}
         </button>
