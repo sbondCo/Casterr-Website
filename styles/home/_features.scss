@@ -20,16 +20,16 @@ section#features {
     align-items: center;
     width: 100%;
 
+    &:focus-visible {
+      outline: 2px solid white;
+    }
+
     @media (max-width: 860px),
       (max-width: 1200px) and (max-height: 900px),
       (min-width: 1200px) and (max-height: 750px) {
       flex-wrap: nowrap;
       justify-content: flex-start;
       overflow-x: scroll;
-
-      &:focus-visible {
-        outline: 2px solid white;
-      }
     }
 
     .feature {
