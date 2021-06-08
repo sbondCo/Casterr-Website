@@ -63,7 +63,7 @@ section#download {
           }
 
           button {
-            cursor: default;
+            pointer-events: none;
 
             &:first-of-type {
               border-top-right-radius: 0;
@@ -81,11 +81,6 @@ section#download {
 
             svg {
               opacity: 0;
-            }
-
-            &:active {
-              top: 0;
-              box-shadow: 0 3px 0 0 black;
             }
           }
         }
