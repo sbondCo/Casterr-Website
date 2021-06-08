@@ -34,11 +34,11 @@ function setDownloadLinks() {
 
 function openDownloadLink(which) {
   if (which == "win" && winDownloadURL) {
-    window.open(winDownloadURL);
+    window.open(winDownloadURL, "_self");
   }
 
   if (which == "linux" && linuxDownloadURL) {
-    window.open(linuxDownloadURL);
+    window.open(linuxDownloadURL, "_self");
   }
 }
 
