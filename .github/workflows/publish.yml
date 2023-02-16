@@ -13,7 +13,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
-          submodules: true # Fetch Hugo themes (true OR recursive)
           fetch-depth: 0 # Fetch all history for .GitInfo and .Lastmod
 
       - name: Setup Hugo
@@ -21,16 +20,6 @@ jobs:
         with:
           hugo-version: "latest"
           extended: false
-
-      - name: Setup Node
-        uses: actions/setup-node@v2
-        with:
-          node-version: 15
-
-      - name: Compile Styles
-        run: |
-          npm i -g sass
-          sass styles/main.scss static/css/main.min.css --style=compressed
 
       - name: Build
         run: hugo --minify
