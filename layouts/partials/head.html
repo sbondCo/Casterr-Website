@@ -5,9 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="index,follow">
 
-<title>Casterr - Record Your Best Moments In-Game and Clip Them For Sharing Easily.</title>
-
 <link rel="canonical" href="{{ .Site.BaseURL }}"/>
-<link rel="icon" type="image/svg" sizes="16×16" href="img/Orange_Casterr_Logo.svg">
-<link href="css/main.min.css" rel="stylesheet">
-<script src="js/home.js" defer></script>
+<link rel="icon" type="image/svg" sizes="16×16" href="/img/Orange_Casterr_Logo.svg">
+{{ $sass := resources.Get "styles/main.scss" }}
+{{ $style := $sass | resources.ToCSS | resources.Fingerprint }}
+<link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}">

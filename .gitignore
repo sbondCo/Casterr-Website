@@ -1,5 +1,4 @@
-# Hugo generated site folder
 public/
-
-# Compiled stylesheets
+resources/
+.hugo*
 *.css*

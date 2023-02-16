@@ -11,6 +11,20 @@ section#features {
 
   .subtitle {
     margin-top: 40px;
+
+    a:only-child {
+      color: $white;
+      text-decoration: none;
+      border-bottom: 1px dashed $white;
+      text-shadow: 1px 1px $black;
+      transition: color 200ms ease-in-out, border-color 200ms ease-in-out;
+
+      &:hover,
+      &:focus {
+        color: $red;
+        border-color: $red;
+      }
+    }
   }
 
   .featureWrapper {

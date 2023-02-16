@@ -1,3 +1,9 @@
-{{ define "main" }}
+{{ define "head" }}
+<script src="js/home.js" defer></script>
+<title>Casterr - Record Your Best Moments In-Game and Clip Them For Sharing Easily.</title>
+{{ end }}
 
+{{ define "main" }}
+  {{- partial "main/download.html" . -}}
+  {{- partial "main/features.html" . -}}
 {{ end }}
