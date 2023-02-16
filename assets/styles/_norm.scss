@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap");
 
 * {
   padding: 0;
@@ -9,6 +9,10 @@
 body {
   color: $white;
   background-color: #363333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
 }
 
 section {
@@ -18,6 +22,24 @@ section {
   @media (max-height: 500px) {
     height: auto;
     padding: 70px 0;
+  }
+}
+
+article {
+  flex: 1;
+}
+
+a:only-child:not(.no-style) {
+  color: $white;
+  text-decoration: none;
+  border-bottom: 1px dashed $white;
+  text-shadow: 1px 1px $black;
+  transition: color 200ms ease-in-out, border-color 200ms ease-in-out;
+
+  &:hover,
+  &:focus {
+    color: $red;
+    border-color: $red;
   }
 }
 
@@ -47,20 +69,6 @@ button {
   &:focus {
     outline: none;
     border-color: $white;
-  }
-}
-
-a:only-child {
-  color: $white;
-  text-decoration: none;
-  border-bottom: 1px dashed $white;
-  text-shadow: 1px 1px $black;
-  transition: color 200ms ease-in-out, border-color 200ms ease-in-out;
-
-  &:hover,
-  &:focus {
-    color: $red;
-    border-color: $red;
   }
 }
 

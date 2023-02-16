@@ -2,11 +2,13 @@
 <html lang="en">
   <head>
     {{- partial "head.html" . -}}
+    {{ block "head" . }} {{ end }}
   </head>
   <body>
     {{- partial "header.html" . -}}
 
-    {{- partial "main/download.html" . -}}
-    {{- partial "main/features.html" . -}}
-</body>
+    {{ block "main" . }} {{ end }}
+
+    {{- partial "footer.html" . -}}
+  </body>
 </html>

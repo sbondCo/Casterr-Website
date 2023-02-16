@@ -1,0 +1,36 @@
+.header {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  width: 60px;
+  height: 60px;
+  user-select: none;
+  transition: width 100ms ease-in, height 100ms ease-in;
+  z-index: 100;
+
+  @media (max-width: 860px) {
+    width: 45px;
+  }
+
+  a {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    text-decoration: none;
+    outline: 0.2rem solid transparent;
+
+    &:hover {
+      outline-color: $black;
+    }
+
+    &:focus {
+      outline-color: $red;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
